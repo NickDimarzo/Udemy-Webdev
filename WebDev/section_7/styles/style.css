@@ -1,0 +1,183 @@
+/*
+    NOTES: Universal and Element Selectors
+    * Is the universal selector
+        - this will select everything on the page
+        - not common or really usefull
+
+    element selector targets everything of the given type
+        - this will select all h1 elements on the page
+        - can use a comma to select multiple selectors in a list
+*/
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+span {
+    color: #457b9d;
+}
+
+
+
+
+/*
+    NOTES: Id Selector
+    Id can  be used to style one individual html element
+        - # is used to target an element with the matching Id
+        - id should be unique, multiple items cannot share an id
+        - try and keep id selectors to a minimum
+*/
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+
+
+
+/*
+    NOTES: Class Selector
+    Creates a class of elements that can be targeted for the same CSS styling
+        - used to create group and style them similarly
+        - . is used to select classes for styling
+        - classes can be used to style elements that are different aswell
+        - not retricted to one type of element
+*/
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+
+
+
+/*
+    NOTES: Decendant selector
+    can be used to select all the decendants of the chosen element
+        - need to use a space when targeting decendants
+        - do not confuse with a comma this will select a list of all elements
+        - can combine different selectors to specify a more direct decendant
+*/
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+
+
+
+/*
+    NOTES: Adjacent selector
+    Can be used to set a rule for elements that follow a similar pattern
+        - not common
+        - these are used for elements on the same level, not children
+*/
+h2 + button {
+    font-size: 20px;
+}
+
+
+
+
+/*
+    NOTES: Direct child selector
+    can be used to select the direct children of a choosen element
+        - works one level down the tree
+        - uses the > 
+*/
+footer > a {
+    color: #a8dadc;
+}
+
+
+
+
+/*
+    NOTES: Attribute selector
+    example : select all input elements where the type attribute is set to "text"
+        - very common to use with input elements
+        - uses [type="type"]
+*/
+input[type="password"] {
+    color: limegreen;
+}
+
+section[class="post"] {
+
+}
+
+
+
+
+/*
+    NOTES: Pseudo Classes selectors
+    Keyword added to selector that specifies a special state 
+    of the selected element(s)
+        - :active
+        - :checked
+        - :first
+        - :first-child
+        - :hover
+        - :not()
+        - :nth-child()
+        - :nth-of-type() 
+    these are just a few common psuedo classes, use mdn to reference the comprehensive list
+*/
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #a7afa4;
+}
+
+
+
+
+/*
+    NOTES: Pseudo elements
+    keyword added to a selector that lets you style a particular part of the selected elemnts
+        - ::after 
+        - ::before 
+        - ::first-letter
+        - ::first-line
+        - ::selection
+    can find more on MDN
+*/
+.post h2::first-letter{
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: rgb(181, 181, 75);
+}
+
+
+

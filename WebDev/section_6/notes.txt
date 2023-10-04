@@ -1,0 +1,23 @@
+NOTE:
+    text-align 
+        - is used to place the text in a position within the current container
+    font-weight 
+        - is used to adjust how bold the selected text is.
+    text-decoration 
+        - sets the appearance of decorative lines on text, example would be an underline in a link
+        - can also set the color, style and the thickness of the line
+        - or to remove a default underline
+    line-height
+        - controls the vertical height of a line box
+        - line-height of 2 would make the text double spaced
+    letter-spacing
+        - controls the horizontal space between letters in the seleceted line box
+    font-size
+        - controls the size of the font
+        - many different size options relative and absolute
+        - try and stay away from absolute values
+    font-family
+        - controls the actual style of font for the selected element
+        - note not all fonts are supported on mac and windows
+        - use a reference to ensure how compatible.
+        - can create a font stack to create a list of font you prefer to be used in order     
