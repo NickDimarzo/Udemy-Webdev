@@ -10,48 +10,48 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="headnav">
             <button type="button">Previous</button>
             <button type="button">Next</button>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="maintop">
+            <div class="desc">
                 <h1>Family Name: Variable</h1>
                 <h2>Genus: Variable</h2>
                 <h3>Species: Variable</h3>
                 <h4>Common names: Variable</h4>
             </div>
         </section>
-        <section>
+        <section class="mainpic">
             <img src="images/image.jpg" alt="This is a temporary image">
         </section>
-        <section>
-            <div>
+        <section class="mainform">
+            <div class="form">
                 <form action="/submit">
-                    <div>
+                    <div class="imgadd">
                         <label for="image">Add images</label>
                         <input type="file" name="image" id="image">
                     </div>
-                    <div>
+                    <div class="collector">
                         <label for="collectors">Collectors</label>
                         <input type="text" name="collectors" id="collectors">
                     </div>
-                    <div>
+                    <div class="date">
                         <label for="date">Date:</label>
                         <input type="date" name="date" id="date">
                     </div>
-                    <div>
+                    <div class="location">
                         <label for="location">Location</label>
                         <input type="text" name="location" id="location">
                     </div>
-                    <div>
+                    <div class="notes">
                         <label for="notes">Notes:</label>
                         <br>
                         <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
                     </div>
-                    <div>
+                    <div class="save">
                         <button>Save</button>
                     </div>
                 </form>
@@ -60,7 +60,7 @@
 
     </main>
     <footer>
-        <nav>
+        <nav class="footnav">
             <button type="button">Previous</button>
             <button type="button">Next</button>
         </nav>
