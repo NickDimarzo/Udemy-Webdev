@@ -1,0 +1,156 @@
+/*
+    NOTES: Box Model width and height
+
+    - Width and height control the content element of the box model
+*/
+div {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    background-color: pink;
+    width: 200px;
+}
+
+
+/*
+    NOTES: Box Model Border and Border-Radius
+
+    The outer most element of the box model
+
+    Important properties
+    - border-width
+        - controls the thickness of the border
+
+    - border-color
+        - contorls the color of the border
+
+    - border-style
+        - controls the line style : dashed, solid stc.
+
+    - pixels are a common measure for border because most borders are going to be small
+
+    - box-sizing : border-box 
+        -   includes the border in the total width of the select element
+            if the width of the content is set to 200 and a 5 pixel border is added the width
+            of the content will shrink to 190 x 190 to allow room for the border to be included 
+            in the width of 200 pixels
+
+    - all border elements can be used to single out one side of the botder, left right, top, bottom
+
+    - border short hand : Width, style, color
+
+    - border-radius is used to create rounded corners
+        - use a percentage value for this
+        - use 50% to make a circle
+        - can also target each corner individually
+*/
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: #ffcdb2;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+}
+
+#three {
+    background-color: #6d6875;
+    border: 4px solid black;
+    border-left-style: dotted;
+    border-radius: 50%;
+}
+
+
+/*
+    NOTES: Box Model Padding
+
+    Padding is the element between the border and the content of the selected element
+
+    - has all the same individual properties
+    - also has the same short hand properties
+    - can look up the short hand padding properties
+    - can use any measure of unit
+
+*/
+
+h1 {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#two {
+    padding-right: 50px;
+}
+
+button {
+    padding: 10px 20px 30px 40px;
+}
+
+
+/*
+    NOTES: Box Model Margin
+
+    Margin is the space outside of the elements border and between other elements
+
+    - has shorthand and individual properties
+    - shorthand is the same as padding
+    - used to create spacing 
+*/
+
+h1 {
+    margin: 0;
+}
+
+/*This is common practice to set the body margin to 0 first and add in later*/
+body {
+    margin: 0;
+}
+
+#one {
+    margin-left: 50px;
+    margin-bottom: 100px;  
+}
+
+#two {
+    margin: 200px;
+}
+
+/*
+    NOTES: Box Model Display Property
+
+    Inline
+    - width and height are ignored.
+    - margin and padding push elements away horizontally but not vertically
+
+    Block
+    - break the flow of the document
+    - width, height, margin and padding are all respected.
+
+    Inline-Block
+    - Behaved like and inline element
+    - width, height, margin and padding are all respected.
+
+    many more, check MDN for a full list
+*/
+
+span {
+    background-color: palevioletred;
+    border: 1px solid black;
+    margin:10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+p {
+    width: 300px;
+}
