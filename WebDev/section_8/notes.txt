@@ -1,0 +1,35 @@
+CSS Units
+
+Relative and Absolute
+
+Absolute
+- most common is the pixel
+- dont use anything else
+
+Relative
+
+Percentages
+- always relative to some other value
+- somtimes from the parent 
+- sometimes from the element itself
+- most commonly used with height and width
+
+em 
+relative to font-size of the parent
+- with the font-size, 1em equals the font-size of the parent.
+- 2em is twice the font-size of the parent.
+- with other properties 1em is equal to the computed font-size of the elements itself
+- will always use the font size.
+
+common issue with em: they stack, prime example would be nested lists
+
+
+rems
+relative to the root html elements font-size |<html lang="en">|
+- often easier to work with
+- if the root font-size is 20px
+- 1rem is always 20px, 2rem is always 40px
+
+
+
+
