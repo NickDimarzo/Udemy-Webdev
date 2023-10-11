@@ -1,0 +1,28 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+/*
+    NOTE: 
+    the rgba alpha channel only effects the selected element
+    in this case only the backround color of the "rgba" section
+*/
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+/*
+    NOTE:
+    The opacity element effect all colors of everything contained
+    in the selected element and all the children of the element
+*/
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}
