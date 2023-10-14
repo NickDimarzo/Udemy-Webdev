@@ -3,6 +3,11 @@ body {
     background-color: #dad7cd;
 }
 
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
 header , footer {
     background-color: #a3b18a ;
     padding: 0.5rem;
@@ -31,14 +36,14 @@ header , footer {
     border-radius: 1em;
     border: 3px solid #344e41;
     margin-bottom: 1rem;
+    font-size: large;
 }
 
 .desc , .form {
     padding-left: 0.5rem;
     background-color: #fefae0;
     border-radius: 1em;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 1.5rem;
 }
 
 .mainform {
