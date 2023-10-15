@@ -1,0 +1,68 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    font-size: 4em;
+    text-align: center;
+}
+
+div:nth-of-type(3)
+{
+    align-self: center;
+}
+
+div:nth-of-type(2)
+{
+    align-self: flex-end;
+}
+
+/*
+    NOTES:
+
+    Justify content is used to align items along the main axis,
+     - if the flex direction is set to column the main axis is vertical
+     - if the flex direction is set to row(default) then the main axis is horixontal
+
+    The cross axis will be the opposite of whatever the main axis is set to
+
+    Algin items is used to align the content along the cross axis
+    - if the main axis is vertical the cross axis will be horizontal
+    - if the main axis is horizontal the cross axis will be vertical
+    - can use Align-items: base-line to align the items using the bottom of the text within the elements
+
+    Flex-wrap is used to change the direction of the cross-axis
+
+    Align content is used to control or distrubte space along the cross access
+    - Only when we have multiple rows or columns
+
+    align self is used for a single element in the flex-box container
+
+    Flex-Basis
+    - Defines the initial size of an element before additional space is distributed
+
+    Flex-Grow
+    - Controls the amount of available space an element should take up
+    - accepts a unit-less number value
+
+    Flex-shrink
+    - if items are larger than the container, they shrink according to flex-shrink
+
+*/
