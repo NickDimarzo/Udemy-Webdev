@@ -1,5 +1,53 @@
-.spacing-test{
-    padding-top: 10em;
-    padding-bottom: 10em;
-    margin: 1em;
+body {
+    background-color: #f0ead2;
+
+    /*
+    can add code to change the font here
+
+    */
 }
+
+main{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#mainnav .navbar-brand {
+    font-size: 1.5rem;
+}
+
+#mainnav .dropdown-menu{
+    background-color: #2f3e46; 
+}
+
+#mainnav{
+    font-size: 1.5rem;
+    background-color: #2f3e46;
+}
+
+.main-test .card {
+    background-color:#52796f ;
+    color: white;
+}
+
+.main-test .card .btn {
+    background-color: #84a98c;
+    color: white;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 1.5em;
+    
+}
+
+/* 
+
+CSS HEX Colors 
+--sage: #c9cba3ff;
+--peach-yellow: #ffe1a8ff;
+--bittersweet: #e26d5cff;
+--wine: #723d46ff;
+--van-dyke: #472d30ff;
+
+*/
