@@ -3,7 +3,6 @@
 // calling the function works exactly the same !! 
 // demonstrates how functions are saved as values in javascript
 // using this method functions can be used as return values or even arguments on other functions!!
-
 // Example
 const add = function(x, y){
     return x + y;
@@ -13,7 +12,6 @@ const add = function(x, y){
 // functions that operate on/with other functions.
 // - can accept othe funcitons as arguments
 // - return a funciton
-
 function callTwice(func){
     func();
     func();
@@ -23,7 +21,6 @@ function rollDie() {
     const roll = Math.floor(Math.random() *  6) + 1
     console.log(roll);
 }
-
 callTwice(rollDie);
 
 
@@ -42,7 +39,6 @@ function makeMysteryFunc(){
         }
     }
 }
-
 const mystery = makeMysteryFunc();
 mystery();
 
@@ -73,7 +69,6 @@ isSenior(40); //returns false
 // Defining Methods
 // can add functions as properties on objects 
 // these are methods in javascript
-
 // object literal called math
 const math = {
     mulitply : function(x, y){
@@ -86,11 +81,12 @@ const math = {
         return x * x;
     }
 }
-
  console.log(math.mulitply(2,2));
 
 
  // Using 'this' keyword
+ // access the property within the object literal
+ // the value of 'this' depends on the invocation context of the function it is used in
  const person = {
     first : 'Nick',
     last : 'Dimarzo',
@@ -99,3 +95,15 @@ const math = {
     }
  }
 person.fullName(); // Nick Dimarzo
+
+// Another Example:
+const hen = {
+    name : 'Helen',
+    eggCount : 0,
+    layAnEgg(){
+        this.eggCount += 1;
+        return 'EGG'
+    }
+}
+
+
